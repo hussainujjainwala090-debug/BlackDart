@@ -1,0 +1,10 @@
+{
+  "name": "blackboard-calendar-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-first Chrome extension scaffold for reviewing Blackboard deadlines and adding approved events to Google Calendar",
+  "scripts": {
+    "test": "node --test"
+  }
+}

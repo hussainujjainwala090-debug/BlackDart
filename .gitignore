@@ -1,0 +1,30 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.env.local
+secrets/
+*.pem
+*.key
+credentials*.json
+token*.json
+oauth*.json
+
+# Build / dependencies
+node_modules/
+dist/
+coverage/
+.cache/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Local exports / course data
+exports/
+fixtures/private/
+screenshots/private/
+*.har

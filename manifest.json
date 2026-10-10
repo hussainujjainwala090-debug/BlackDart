@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Blackboard Calendar Assistant",
+  "version": "0.2.0",
+  "description": "Review Blackboard event candidates before adding them to Google Calendar.",
+  "permissions": ["storage", "identity"],
+  "host_permissions": [
+    "https://blackboard.example.edu/*",
+    "https://www.googleapis.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://blackboard.example.edu/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "type": "module"
+    }
+  ],
+  "action": {
+    "default_title": "Blackboard Calendar Assistant",
+    "default_popup": "popup.html"
+  },
+  "oauth2": {
+    "client_id": "REPLACE_WITH_GOOGLE_OAUTH_CLIENT_ID",
+    "scopes": ["https://www.googleapis.com/auth/calendar.events"]
+  }
+}
