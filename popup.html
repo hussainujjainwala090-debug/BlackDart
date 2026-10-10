@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blackboard Calendar Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">ACADEMIC ORGANIZER</p>
+    <h1>Calendar Assistant</h1>
+    <p id="status">Loading candidates…</p>
+  </header>
+  <main>
+    <div class="toolbar">
+      <button id="refresh" class="secondary">Refresh</button>
+      <button id="clear" class="secondary">Clear local queue</button>
+    </div>
+    <div id="events"></div>
+    <footer>
+      <button id="approve" class="primary">Add selected to Google Calendar</button>
+      <p id="result" role="status"></p>
+      <p class="note">Review every date against Blackboard. This prototype supports explicit dates only.</p>
+    </footer>
+  </main>
+</body>
+</html>
